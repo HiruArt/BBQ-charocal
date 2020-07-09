@@ -1,0 +1,153 @@
+@import "mixins.scss";
+
+
+$black: #011627;
+$blacklight: #656073;
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-wrap{
+  overflow: hidden;
+  position: relative;
+}
+
+textarea,
+input,
+a,
+a:focus,
+a:active,
+a:hover{
+  text-decoration: none;
+  outline: 0;
+}
+
+button{
+  outline: 0;
+}
+
+a,
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0!important;
+  outline-color: transparent!important;
+  outline-width: 0!important;
+  outline-style: none!important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  color: #090909;
+}
+
+a{
+  color: #090909;
+}
+
+.tablet{
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
+.mobile{
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+input{
+  transition: 0.3s;
+
+  &:focus{
+    border-color: #5b6e7b !important;
+    color: #163143 !important;
+  }
+  &:active{
+    border-color: #5b6e7b !important;
+  }
+
+}
+.correct input,
+.correct textarea{
+  color: #5b6e7b !important;
+  border-color: #aef7e9 !important;
+}
+
+.error-field input,
+.error-field textarea{
+  color: #5b6e7b !important;
+  border-color: #ee789a !important;
+}
+
+.page__wrapper{
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.custom-row{
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-col{
+  padding: 0 15px;
+}
+
+.site-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
+
+.site-title2{
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+
+  color: #090909;
+
+  @include for-992{
+    text-align: center;
+    font-size: 30px;
+    line-height: 103%;
+  }
+}
+
+.site-btn{
+
+}
+

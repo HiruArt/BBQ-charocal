@@ -1,0 +1,33 @@
+//include _mixins
+
+block vars
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name="viewport" content="initial-scale=1.0, width=device-width")
+		title PraktikMed
+		meta(name="description", content='description content')
+
+		//favicon
+		link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
+
+
+		link(rel='stylesheet', href='css/libs.min.css')
+		link(rel='stylesheet', href='css/style.min.css')
+
+
+
+	body(class="page " + pageClass)
+		.page__wrapper
+			include modules/_header
+
+			main.page__content
+				block content
+
+			include modules/_footer
+		block scripts
+			script(src='js/libs.min.js')
+			script(src='js/main.min.js')
