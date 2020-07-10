@@ -1,194 +1,192 @@
 extends _layout
 
 block vars
-  - var pageTitle = "Home page";
-  - var pageClass = "";
-  - var pageActive = "homepage";
+	- var pageTitle = "Home page";
+	- var pageClass = "";
+	- var pageActive = "homepage";
 block content
-  //
-    .b-lazy.webp-img(data-webp="./img/motivated-bg.webp"
-      data-webp-mobile="./img/motivated-bg-mobile.webp"
-      data-img="./img/motivated-bg.png"
-      data-img-mobile="./img/motivated-bg-mobile.png")
+	//
+		.b-lazy.webp-img(data-webp="./img/motivated-bg.webp"
+			data-webp-mobile="./img/motivated-bg-mobile.webp"
+			data-img="./img/motivated-bg.png"
+			data-img-mobile="./img/motivated-bg-mobile.png")
 
-    picture
-      source(srcset="./img/logo.webp" type="image/webp")
-      source(srcset="./img/logo.jpg" type="image/png")
-      img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+		picture
+			source(srcset="./img/logo.webp" type="image/webp")
+			source(srcset="./img/logo.jpg" type="image/png")
+			img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
 
-  div.main-wrap
-    .about#about
-      .about__bg-img.b-lazy.webp-img(data-webp="./img/top-bg-img.webp"
-        data-webp-mobile=""
-        data-img="./img/top-bg-img.png"
-        data-img-mobile="")
-      .about__inner.site-container
-        h1.about__title Древесной уголь от производителя
-        .about__txt.
-          Производство древесного угля является основным направлением детальности компании «BBQ charocal». В качестве сырья используется высокоуглеродистое вещество, образованное естественным путем из твердолиственных пород деревьев. После прохождения полного цикла переработки на современном оборудовании с использованием новейших технологий мы получаем конечный продукт – древесный уголь
-        .about__btn
-          a(href="#").site-btn.about__btn-i Заказать
+	div.main-wrap
+		.about#about
+			.about__bg-img.b-lazy.webp-img(data-webp="./img/top-bg-img.webp"
+				data-webp-mobile=""
+				data-img="./img/top-bg-img.png"
+				data-img-mobile="")
+			.about__inner.site-container
+				h1.about__title Древесной уголь от производителя
+				.about__txt.
+					Производство древесного угля является основным направлением детальности компании «BBQ charocal». В качестве сырья используется высокоуглеродистое вещество, образованное естественным путем из твердолиственных пород деревьев. После прохождения полного цикла переработки на современном оборудовании с использованием новейших технологий мы получаем конечный продукт – древесный уголь
+				.about__btn
+					a(href="#").site-btn.about__btn-i Заказать
+
+		.advantage#advantage
+			.advantage__inner.site-container
+				h2.advantage__title.site-title преимущества
+				.advantage__content.custom-row
+					.advantage__item.custom-col
+						.advantage__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/advantage-ico01.svg" alt="ico"
+								width="47" height="50").b-lazy
+						.advantage__txt
+							.advantage__name Собственное производство
+							.advantage__desc.
+								Две площадки в Житомирской области,
+								объём производства более 50 тонн в месяц.
+								Используем только твердые породы дерева
+					.advantage__item.custom-col
+						.advantage__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/advantage-ico02.svg" alt="ico"
+								width="46" height="54").b-lazy
+						.advantage__txt
+							.advantage__name Большое удельное тепловыделение
+							.advantage__desc.
+								Древесный уголь можно с успехом использовать для отопления помещений, оборудованных каминами
+					.advantage__item.custom-col
+						.advantage__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/advantage-ico03.svg" alt="ico"
+								width="50" height="50").b-lazy
+						.advantage__txt
+							.advantage__name Быстрое нагревание и устойчивый жар
+							.advantage__desc.
+								Благодаря качеству производства уголь быстро нагреваеться и долго держит необходимую температуру
+					.advantage__item.custom-col
+						.advantage__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/advantage-ico04.svg" alt="ico"
+								width="65" height="55").b-lazy
+						.advantage__txt
+							.advantage__name Оптимальная цена и скидки
+							.advantage__desc.
+								Цена указана от производителя, без наценок от посредников. Для оптовых покупателей предлагаем хорошие скидки
+
+		.price#price.b-lazy.webp-img(data-webp="./img/fire-paralax-bg.webp"
+			data-webp-mobile=""
+			data-img="./img/fire-paralax-bg.jpg"
+			data-img-mobile="")
+			.price__inner.site-container
+				h2.price__title.site-title.site-title--red Стоимость
+				.price__content
+					.price__txt
+						p Цена:
+							span 13 грн/кг <br>
+							| (при заказе от 100 кг.)
+						p Оптовая цена:
+							span Договорная
+
+					.price__caption.
+						Фасовка: бумажные крафтовые мешки по 10 кг. При заказе от 200 кг. возможна бесплатная доставка
+
+		.gallery#gallery
+			.gallery__inner
+				h2.gallery__title.site-title Фотогалерея
+				.gallery__content#gallery-slider
+					a(href="./img/gallery-photo01.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo01.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo02.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo02.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo03.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo03.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo01.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo01.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo02.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo02.jpg"
+							alt="img" ).b-lazy.gallery__img
+
+		.contact#contact
+			.contact__bg-img-1.b-lazy.webp-img(data-webp="./img/contact-bg01.webp"
+				data-webp-mobile=""
+				data-img="./img/contact-bg01.png"
+				data-img-mobile="")
+			.contact__bg-img-2.b-lazy.webp-img(data-webp="./img/contact-bg02.webp"
+				data-webp-mobile=""
+				data-img="./img/contact-bg02.png"
+				data-img-mobile="")
+			.contact__inner.site-container
+				.contact__info
+					h2.contact__title.site-title Контакты
+					.contact__row
+						.contact__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/contact-pin.svg" alt="ico"
+								width="19" height="20").b-lazy
+						.contact__item
+							.contact__txt
+								span Адрес:
+								| г. Житомир, ул. Покровская 90
+					.contact__row
+						.contact__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/contact-phone.svg" alt="ico"
+								width="16" height="16").b-lazy
+						.contact__item
+							.contact__txt
+								span Телефон:
+								a(href="tel:+380673130282") +38 (067) 313 02-82
+								a(href="tel:+380444657239") +38 (044) 465 72-39
+					.contact__row
+						.contact__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/contact-mail.svg" alt="ico"
+								width="16" height="13").b-lazy
+						.contact__item
+							.contact__txt
+								span E-mail:
+								a(href="mailto:sales@bbqcharcoal.com.ua") sales@bbqcharcoal.com.ua
+					.contact__row
+						.contact__ico
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+								data-blazy="./img/ico/contact-time.svg" alt="ico"
+								width="19" height="19").b-lazy
+						.contact__item
+							.contact__txt
+								span Рабочие часы:
+								| Понедельник-пятница 9:00 - 18:00
+
+					.contact__sotial
+						a(href="#").contact__sotial-i
+							include ../img/ico/sotial-fb.svg
+						a(href="#").contact__sotial-i
+							include ../img/ico/sotial-inst.svg
+						a(href="#").contact__sotial-i
+							include ../img/ico/sotial-tg.svg
 
 
-    .advantage#advantage
-      .advantage__inner.site-container
-        .advantage__title.site-title
-        .advantage__content.custom-row
-          .advantage__item.custom-col
-            .advantage__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/advantage-ico01.svg" alt="ico"
-                width="47" height="50").b-lazy
-            .advantage__txt
-              .advantage__name Собственное производство
-              .advantage__desc.
-                Две площадки в Житомирской области,
-                объём производства более 50 тонн в месяц.
-                Используем только твердые породы дерева
-          .advantage__item.custom-col
-            .advantage__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/advantage-ico02.svg" alt="ico"
-                width="46" height="54").b-lazy
-            .advantage__txt
-              .advantage__name Большое удельное тепловыделение
-              .advantage__desc.
-                Древесный уголь можно с успехом использовать для отопления помещений, оборудованных каминами
-          .advantage__item.custom-col
-            .advantage__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/advantage-ico03.svg" alt="ico"
-                width="50" height="50").b-lazy
-            .advantage__txt
-              .advantage__name Быстрое нагревание и устойчивый жар
-              .advantage__desc.
-                Благодаря качеству производства уголь быстро нагреваеться и долго держит необходимую температуру
-          .advantage__item.custom-col
-            .advantage__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/advantage-ico04.svg" alt="ico"
-                width="65" height="55").b-lazy
-            .advantage__txt
-              .advantage__name Оптимальная цена и скидки
-              .advantage__desc.
-                Цена указана от производителя, без наценок от посредников. Для оптовых покупателей предлагаем хорошие скидки
-
-    .price#price.b-lazy.webp-img(data-webp="./img/fire-paralax-bg.webp"
-      data-webp-mobile=""
-      data-img="./img/fire-paralax-bg.jpg"
-      data-img-mobile="")
-      .price__inner.site-container
-        .price__title.site-title.site-title--red Стоимость
-        .price__content
-          .price__txt
-            p Цена:
-              span 13 грн/кг <br>
-              | (при заказе от 100 кг.)
-            p Оптовая цена:
-              span Договорная
-
-          .price__caption.
-            Фасовка: бумажные крафтовые мешки по 10 кг. При заказе от 200 кг. возможна бесплатная доставка
-
-    .gallery#gallery
-      .gallery__inner
-        .gallery__title.site-title2
-        .gallery__content#gallery-slider
-          a(href="./img/gallery-photo01.jpg").gallery__item
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-blazy="./img/gallery-photo01.jpg"
-              alt="img" ).b-lazy.gallery__img
-          a(href="./img/gallery-photo02.jpg").gallery__item
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-blazy="./img/gallery-photo02.jpg"
-              alt="img" ).b-lazy.gallery__img
-          a(href="./img/gallery-photo03.jpg").gallery__item
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-blazy="./img/gallery-photo03.jpg"
-              alt="img" ).b-lazy.gallery__img
-          a(href="./img/gallery-photo01.jpg").gallery__item
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-blazy="./img/gallery-photo01.jpg"
-              alt="img" ).b-lazy.gallery__img
-          a(href="./img/gallery-photo02.jpg").gallery__item
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-blazy="./img/gallery-photo02.jpg"
-              alt="img" ).b-lazy.gallery__img
-
-    .contact#contact
-      .contact__bg-img-1.b-lazy.webp-img(data-webp="./img/contact-bg01.webp"
-        data-webp-mobile=""
-        data-img="./img/contact-bg01.png"
-        data-img-mobile="")
-      .contact__bg-img-2.b-lazy.webp-img(data-webp="./img/contact-bg02.webp"
-        data-webp-mobile=""
-        data-img="./img/contact-bg02.png"
-        data-img-mobile="")
-      .contact__inner.site-container
-        .contact__info
-          .contact__title.site__title Контакты
-          .contact__row
-            .contact__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/contact-pin.svg" alt="ico"
-                width="19" height="20").b-lazy
-            .contact__item
-              .contact__txt
-                span Адрес:
-                | г. Житомир, ул. Покровская 90
-          .contact__row
-            .contact__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/contact-phone.svg" alt="ico"
-                width="16" height="16").b-lazy
-            .contact__item
-              .contact__txt
-                span Телефон:
-                a(href="tel:+380673130282") +38 (067) 313 02-82
-                a(href="tel:+380444657239") +38 (044) 465 72-39
-          .contact__row
-            .contact__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/contact-mail.svg" alt="ico"
-                width="16" height="13").b-lazy
-            .contact__item
-              .contact__txt
-                span E-mail:
-                a(href="mailto:sales@bbqcharcoal.com.ua") sales@bbqcharcoal.com.ua
-          .contact__row
-            .contact__ico
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-blazy="./img/ico/contact-time.svg" alt="ico"
-                width="19" height="19").b-lazy
-            .contact__item
-              .contact__txt
-                span Рабочие часы:
-                | Понедельник-пятница 9:00 - 18:00
-
-          .contact__sotial
-            a(href="#").contact__sotial-i
-              include ../img/ico/sotial-fb.svg
-            a(href="#").contact__sotial-i
-              include ../img/ico/sotial-inst.svg
-            a(href="#").contact__sotial-i
-              include ../img/ico/sotial-tg.svg
-
-
-        .contact__form.site-form
-          form
-            .site-form__title
-            .site-form__row
-              .site-form__input
-                input(type="text" name="name" placeholder="")
-            .site-form__row
-              .site-form__input
-                input(type="tel" name="name" placeholder="").phone
-            .site-form__row
-              .site-form__input
-                input(type="email" name="name" placeholder="")
-            .site-form__btn
-              a(href="javascript:void(0)").site-btn.site-form__btn-i Отправить
-              input(type="submit" value="Отправить").site-btn.site-form__btn-i
+				.contact__form.site-form
+					form
+						.site-form__title
+						.site-form__row
+							.site-form__input
+								input(type="text" name="name" placeholder="")
+						.site-form__row
+							.site-form__input
+								input(type="tel" name="name" placeholder="").phone
+						.site-form__row
+							.site-form__input
+								input(type="email" name="name" placeholder="")
+						.site-form__btn
+							a(href="javascript:void(0)").site-btn.site-form__btn-i Отправить
 
 
 

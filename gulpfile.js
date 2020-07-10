@@ -133,7 +133,7 @@ gulp.task('serve', () => {
       baseDir: 'dist'
     }
   });
-})
+});
 
 gulp.task(
   'dev',
