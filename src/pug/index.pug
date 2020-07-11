@@ -19,19 +19,19 @@ block content
 	div.main-wrap
 		.about#about
 			.about__bg-img.b-lazy.webp-img(data-webp="./img/top-bg-img.webp"
-				data-webp-mobile=""
-				data-img="./img/top-bg-img.png"
-				data-img-mobile="")
+				data-img="./img/top-bg-img.png")
 			.about__inner.site-container
-				h1.about__title Древесной уголь от производителя
-				.about__txt.
-					Производство древесного угля является основным направлением детальности компании «BBQ charocal». В качестве сырья используется высокоуглеродистое вещество, образованное естественным путем из твердолиственных пород деревьев. После прохождения полного цикла переработки на современном оборудовании с использованием новейших технологий мы получаем конечный продукт – древесный уголь
-				.about__btn
-					a(href="#").site-btn.about__btn-i Заказать
+				.about__content
+					h1.about__title Древесной уголь от производителя
+					.about__txt.
+						Производство древесного угля является основным направлением детальности компании «BBQ charocal». В качестве сырья используется высокоуглеродистое вещество, образованное естественным путем из твердолиственных пород деревьев. После прохождения полного цикла переработки на современном оборудовании с использованием новейших технологий мы получаем конечный продукт – древесный уголь
+					.about__btn
+						a(href="#").site-btn.about__btn-i Заказать
 
 		.advantage#advantage
 			.advantage__inner.site-container
-				h2.advantage__title.site-title преимущества
+				h2.advantage__title.site-title
+					span преимущества
 				.advantage__content.custom-row
 					.advantage__item.custom-col
 						.advantage__ico
@@ -73,25 +73,25 @@ block content
 								Цена указана от производителя, без наценок от посредников. Для оптовых покупателей предлагаем хорошие скидки
 
 		.price#price.b-lazy.webp-img(data-webp="./img/fire-paralax-bg.webp"
-			data-webp-mobile=""
-			data-img="./img/fire-paralax-bg.jpg"
-			data-img-mobile="")
+			data-img="./img/fire-paralax-bg.jpg")
 			.price__inner.site-container
-				h2.price__title.site-title.site-title--red Стоимость
+				h2.price__title.site-title.site-title--red
+					span Стоимость
 				.price__content
 					.price__txt
-						p Цена:
+						p Цена:&nbsp;
 							span 13 грн/кг <br>
 							| (при заказе от 100 кг.)
-						p Оптовая цена:
+						p Оптовая цена:&nbsp;
 							span Договорная
 
 					.price__caption.
 						Фасовка: бумажные крафтовые мешки по 10 кг. При заказе от 200 кг. возможна бесплатная доставка
 
 		.gallery#gallery
-			.gallery__inner
-				h2.gallery__title.site-title Фотогалерея
+			.gallery__inner.site-container
+				h2.gallery__title.site-title
+					span Фотогалерея
 				.gallery__content#gallery-slider
 					a(href="./img/gallery-photo01.jpg").gallery__item
 						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -113,19 +113,28 @@ block content
 						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 							data-blazy="./img/gallery-photo02.jpg"
 							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo01.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo01.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo02.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo02.jpg"
+							alt="img" ).b-lazy.gallery__img
+					a(href="./img/gallery-photo03.jpg").gallery__item
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-blazy="./img/gallery-photo03.jpg"
+							alt="img" ).b-lazy.gallery__img
 
 		.contact#contact
 			.contact__bg-img-1.b-lazy.webp-img(data-webp="./img/contact-bg01.webp"
-				data-webp-mobile=""
-				data-img="./img/contact-bg01.png"
-				data-img-mobile="")
+				data-img="./img/contact-bg01.png")
 			.contact__bg-img-2.b-lazy.webp-img(data-webp="./img/contact-bg02.webp"
-				data-webp-mobile=""
-				data-img="./img/contact-bg02.png"
-				data-img-mobile="")
+				data-img="./img/contact-bg02.png")
 			.contact__inner.site-container
 				.contact__info
-					h2.contact__title.site-title Контакты
+					h2.contact__title.site-title
+						span Контакты
 					.contact__row
 						.contact__ico
 							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -175,18 +184,19 @@ block content
 
 				.contact__form.site-form
 					form
-						.site-form__title
+						.site-form__title  Оставляйте заявку <br> и мы свяжемся с вами!
 						.site-form__row
 							.site-form__input
-								input(type="text" name="name" placeholder="")
+								input(type="text" name="name" placeholder="Имя")
 						.site-form__row
 							.site-form__input
-								input(type="tel" name="name" placeholder="").phone
+								input(type="tel" name="phone" inputmode="numeric" placeholder="Телефон").phone
 						.site-form__row
 							.site-form__input
-								input(type="email" name="name" placeholder="")
+								input(type="email" name="email" placeholder="Email")
 						.site-form__btn
-							a(href="javascript:void(0)").site-btn.site-form__btn-i Отправить
-
+							a(href="#)").site-btn.site-form__btn-i.form-btn Отправить
+					.site-form__submitted
+						.site-form__title  Спасибо! <br> Вскоре мы свяжемся с вами!
 
 
