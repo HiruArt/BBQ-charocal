@@ -88,7 +88,6 @@ $(document).ready(function () {
         var webp;
         if($(this).data('webp-mobile') !== undefined)
           webp = $(this).data('webp-mobile'); else webp = $(this).data('webp');
-        console.log($(this).data('webp-mobile'));
         $(this).attr('data-blazy', webp);
       });
     }

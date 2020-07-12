@@ -3,9 +3,11 @@ header.header
 		.header__logo
 			.header__logo-i
 				picture
-					source(srcset="./img/logo.webp" type="image/webp")
-					source(srcset="./img/logo.jpg" type="image/jpg")
-					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="165"  alt="img")
+					source( media="(max-width: 799px)" srcset="./img/logo-mobile.webp" type="image/webp")
+					source( media="(min-width: 800px)" srcset="./img/logo.webp" type="image/webp")
+					source( media="(max-width: 799px)" srcset="./img/logo-mobile.jpg" type="image/jpg")
+					source( media="(min-width: 800px)" srcset="./img/logo.jpg" type="image/jpg")
+					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  alt="img")
 		.header__content
 			.header__phone
 				a(href="tel:+380673130282") +38 (067) 313 02 82
