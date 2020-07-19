@@ -750,6 +750,10 @@ input{
   background-attachment: fixed;
   background-position: center;
 
+  @include for-768{
+    background-attachment: scroll;
+  }
+
   &__inner{
     padding-top: 80px;
     padding-bottom: 70px;
