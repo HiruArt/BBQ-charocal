@@ -24,12 +24,28 @@ footer.footer
 				.footer__menu-i.custom-col.nav-link
 					a(href="#contact") Контакты
 
-.popup.callback
+.popup.contact
 	.popup__body
 		.popup__inner
 			.popup__close
 				.popup__close-ico
-			.popup__content.callback__content
+			.popup__content.contact__content
+				.contact__form.site-form
+					form
+						.site-form__title  Оставляйте заявку <br> и мы свяжемся с вами!
+						.site-form__row
+							.site-form__input
+								input(type="text" name="name" placeholder="Имя")
+						.site-form__row
+							.site-form__input
+								input(type="tel" name="phone" inputmode="numeric" placeholder="Телефон").phone
+						.site-form__row
+							.site-form__input
+								input(type="email" name="email" placeholder="Email")
+						.site-form__btn
+							a(href="#)").site-btn.site-form__btn-i.form-btn Отправить
+					.site-form__submitted
+						.site-form__title  Спасибо! <br> Вскоре мы свяжемся с вами!
 
 
 
